@@ -5,6 +5,13 @@
    'package-archives
    '("melpa" . "https://melpa.org/packages/")
    '("org" . "http://orgmode.org/elpa/")))
+ 
+;; Add Quelpa as well:
+(if (require 'quelpa nil t)
+    (quelpa-self-upgrade)
+  (with-temp-buffer
+    (url-insert-file-contents "https://github.com/quelpa/quelpa/raw/master/bootstrap.el")
+    (eval-buffer)))
 
 (package-initialize)
 
@@ -32,6 +39,7 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 (setq org-log-done t)
+(setq org-image-actual-width nil)
     
 ;; Enable the olivetti mode for margins:    
 (define-globalized-minor-mode my-global-olivetti-mode olivetti-mode
