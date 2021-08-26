@@ -34,6 +34,8 @@
   (unless (package-installed-p 'org-books)
     (package-install 'org-books))
     
+(setq-default major-mode 'org-mode)
+    
 ;; Shortcuts for Org Mode submodules:
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c a") 'org-agenda)
@@ -64,8 +66,7 @@ heading."
     (outline-next-visible-heading arg)))
 
 (defun sa-outline-backward-same-level (arg)
-  "If its the last outline sibling, move to the previous visible outline
-heading."
+  "If its the last outline sibling, move to the previous visible outline heading."
   (interactive "p")
   (if (save-excursion (outline-get-last-sibling))
       (outline-backward-same-level arg)
@@ -270,7 +271,7 @@ nil if before the first headline."
    '("392103647f87afe03ce2e4e1d99c8b840c69dfa267e7d68382d470c047b5c181" "318317bf0188781fc9852633a8fa55b3ade2d01694643f21c2ce75597f277dfc" "c0429683ff6ea4bed2f3d5a1c94717dff22d4f52ec1f5ebaf67dfab5d78787f1" "60d4556ebff0dc94849f177b85dcb6956fe9bd394c18a37e339c0fcd7c83e4a9" default))
  '(initial-frame-alist '((fullscreen . maximized)))
  '(package-selected-packages
-   '(inkpot-theme flyspell-correct-ivy flyspell-correct-helm flyspell-correct olivetti org-bullets org-books org-notebook persistent-scratch html2org highlight-context-line highlight-current-line autothemer rudel ace-jump-mode ace-jump-zap ace-link ac-ispell windresize rich-minority myers xclip scroll-restore nlinum on-screen pabbrev compact-docstrings jumpc auto-overlays loc-changes loccur ace-window context-coloring delight org outorg tablist fountain-mode caseformat beacon avy all org-wc org-tree-slide org-transform-tree-table org-seek org-ref org-pdfview org-linkany org-if org-grep org-gnome org-edit-latex org-cua-dwim org-context org-cliplink org-bullets org-beautify-theme org-autolist org-ac flyspell-popup flyspell-correct-popup define-word buffer-manage broadcast bracketed-paste bpr bookmark+ bibtex-utils bibretrieve avk-emacs-themes autopair autofit-frame autobookmarks auto-save-buffers-enhanced auto-package-update auto-org-md auto-dim-other-buffers auto-complete-chunk ac-html))
+   '(ocamlformat merlin inkpot-theme flyspell-correct-ivy flyspell-correct-helm flyspell-correct olivetti org-bullets org-books org-notebook persistent-scratch html2org highlight-context-line highlight-current-line autothemer rudel ace-jump-mode ace-jump-zap ace-link ac-ispell windresize rich-minority myers xclip scroll-restore nlinum on-screen pabbrev compact-docstrings jumpc auto-overlays loc-changes loccur ace-window context-coloring delight org outorg tablist fountain-mode caseformat beacon avy all org-wc org-tree-slide org-transform-tree-table org-seek org-ref org-pdfview org-linkany org-if org-grep org-gnome org-edit-latex org-cua-dwim org-context org-cliplink org-bullets org-beautify-theme org-autolist org-ac flyspell-popup flyspell-correct-popup define-word buffer-manage broadcast bracketed-paste bpr bookmark+ bibtex-utils bibretrieve avk-emacs-themes autopair autofit-frame autobookmarks auto-save-buffers-enhanced auto-package-update auto-org-md auto-dim-other-buffers auto-complete-chunk ac-html))
  '(show-paren-mode t))
  
  ;; scratch mode settings
@@ -361,6 +362,8 @@ Use a prefix arg to get regular RET. "
 (add-hook 'flyspell-mode-hook #'flyspell-popup-auto-correct-mode)
 
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Coming Soon" :foundry "BROS" :slant normal :weight normal :height 132 :width normal)))))
