@@ -265,13 +265,12 @@ nil if before the first headline."
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(inkpot))
  '(custom-safe-themes
    '("392103647f87afe03ce2e4e1d99c8b840c69dfa267e7d68382d470c047b5c181" "318317bf0188781fc9852633a8fa55b3ade2d01694643f21c2ce75597f277dfc" "c0429683ff6ea4bed2f3d5a1c94717dff22d4f52ec1f5ebaf67dfab5d78787f1" "60d4556ebff0dc94849f177b85dcb6956fe9bd394c18a37e339c0fcd7c83e4a9" default))
  '(initial-frame-alist '((fullscreen . maximized)))
  '(package-selected-packages
-   '(ocamlformat merlin inkpot-theme flyspell-correct-ivy flyspell-correct-helm flyspell-correct olivetti org-bullets org-books org-notebook persistent-scratch html2org highlight-context-line highlight-current-line autothemer rudel ace-jump-mode ace-jump-zap ace-link ac-ispell windresize rich-minority myers xclip scroll-restore nlinum on-screen pabbrev compact-docstrings jumpc auto-overlays loc-changes loccur ace-window context-coloring delight org outorg tablist fountain-mode caseformat beacon avy all org-wc org-tree-slide org-transform-tree-table org-seek org-ref org-pdfview org-linkany org-if org-grep org-gnome org-edit-latex org-cua-dwim org-context org-cliplink org-bullets org-beautify-theme org-autolist org-ac flyspell-popup flyspell-correct-popup define-word buffer-manage broadcast bracketed-paste bpr bookmark+ bibtex-utils bibretrieve avk-emacs-themes autopair autofit-frame autobookmarks auto-save-buffers-enhanced auto-package-update auto-org-md auto-dim-other-buffers auto-complete-chunk ac-html))
+   '(inkpot-theme flyspell-correct-ivy flyspell-correct-helm flyspell-correct olivetti org-bullets org-books org-notebook persistent-scratch html2org highlight-context-line highlight-current-line autothemer rudel ace-jump-mode ace-jump-zap ace-link ac-ispell windresize rich-minority myers xclip scroll-restore nlinum on-screen pabbrev compact-docstrings jumpc auto-overlays loc-changes loccur ace-window context-coloring delight org outorg tablist fountain-mode caseformat beacon avy all org-wc org-tree-slide org-transform-tree-table org-seek org-ref org-pdfview org-linkany org-if org-grep org-gnome org-edit-latex org-cua-dwim org-context org-cliplink org-bullets org-beautify-theme org-autolist org-ac flyspell-popup flyspell-correct-popup define-word buffer-manage broadcast bracketed-paste bpr bookmark+ bibtex-utils bibretrieve avk-emacs-themes autopair autofit-frame autobookmarks auto-save-buffers-enhanced auto-package-update auto-org-md auto-dim-other-buffers auto-complete-chunk ac-html))
  '(show-paren-mode t))
  
  ;; scratch mode settings
